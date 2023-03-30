@@ -1,39 +1,7 @@
 FROM jupyter/all-spark-notebook:latest
-# Install Python 3 packages
-
-# pip install --upgrade pip
-# pip install pylint
-# pip install psycopg2
-# pip install SQLAlchemy
-# pip install pandas
-# pip install Flask
-# pip install pymongo
-# pip install dnspython
-# pip install geopandas
-# pip install GeoAlchemy2
-# pip install Shapely
-# pip install Fiona
-# pip install ipykernel
-# pip install numba
-# pip install pyspark
-# pip install pg8000
-# pip install psycopg
-# pip install asyncpg
-# pip install streamlit
-# pip install watchdog
-# pip install streamlit_jupyter
-# pip install plotly
-# pip install dash
-# pip install jupyter-dash
-# pip install dash-leaflet
-# pip install xarray
-# pip install Cartopy
-# pip install cmocean
-# pip install kernel-run --upgraded
-
 RUN pip install --upgrade pip && \
     apt-get update && \
-    sudo apt -y install libgeos-dev && \
+    apt -y install libgeos-dev && \
     pip install --no-cache-dir \
     pylint \
     psycopg2 \
