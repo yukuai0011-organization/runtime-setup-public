@@ -1,7 +1,5 @@
 FROM jupyter/all-spark-notebook:latest
-RUN pip install --upgrade pip && \
-    apt-get update && \
-    apt -y install libgeos-dev && \
+RUN apt -y install libgeos-dev && \
     pip install --no-cache-dir \
     pylint \
     psycopg2 \
