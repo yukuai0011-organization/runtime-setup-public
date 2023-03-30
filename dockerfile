@@ -2,7 +2,6 @@ FROM jupyter/all-spark-notebook:latest
 USER root
 RUN pip install --no-cache-dir \
     pylint \
-    psycopg2 \
     SQLAlchemy \
     pandas \
     Flask \
