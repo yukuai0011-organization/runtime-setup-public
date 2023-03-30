@@ -1,7 +1,6 @@
 FROM jupyter/all-spark-notebook:latest
 USER root
-RUN apt -y install libgeos-dev && \
-    pip install --no-cache-dir \
+RUN pip install --no-cache-dir \
     pylint \
     psycopg2 \
     SQLAlchemy \
